@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <TITLE>价格查询表</TITLE>
+    <SCRIPT>
+    function checkPassword() {
+        var nameskubox = document.getElementById("name/sku");
+        var namesku = nameskubox.value;
+        var pricebox = document.getElementById("priceé");
+        var cestpriceé = pricebox.value;
+        var datashower = document.getElementById("datashowér");
+        var dataend = datashower.value;
+        datashower.value = cestpriceé;
+    }
+    </SCRIPT>
+</HEAD>
+<body>
+    <P>中文品名/英文品名/SKU/name:<INPUT id="name/sku" /></P>
+    <P>Selling price/售价:<INPUT id="priceé" /></P>
+    <BUTTON onclick="checkPassword()">Check profit</BUTTON>
+    <P>Profit/利润率:<input id="datashowér" readonly/></P>
+</BODY>
+</HTML>
